@@ -4,7 +4,7 @@ main, header {
     text-align: center;
 }
 
-.mainnav {
+.main-nav {
     margin-top: 77px;
 }
 
@@ -22,7 +22,7 @@ article {
     margin-left: 56px;
 }
 
-.mainnav ul li {
+.main-nav ul li {
     list-style: none;
     display: inline-block;
     padding: 0 35px;
@@ -30,16 +30,16 @@ article {
     text-transform: uppercase;    
 }
 
-.mainnav ul li a {
+.main-nav ul li a {
     color: #626262;
     text-decoration: none;
 }
 
-.mainnav ul li a:hower {
+.main-nav ul li a:hower {
     color: #7fd9c7;
 }
 
-.mainnav ul li a:active {
+.main-nav ul li a:active {
     color: red ;
 }
 
