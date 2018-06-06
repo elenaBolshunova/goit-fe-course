@@ -1,0 +1,174 @@
+ *{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family:'Roboto', sans-serif; 
+    font-size: 18px;
+    line-height: 26px;
+    margin: 35px 275px 82px 132px;
+} 
+.logo {
+    float: left;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 32px;
+  } 
+.logo::first-letter {
+    color: #1abc9c;
+    font-weight: bold;  
+} 
+.first {
+    padding: 24px 15px;
+}
+.menu {
+    float: right;
+    list-style: none;
+    font-size: 14px;
+    line-height: 11px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.menu li {
+    float: left;
+    margin: 0 30px;
+}
+.menu li:first-child {
+    margin-left: 56px;
+    color: #1abc9c;
+}
+/* .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }  */
+
+.products {
+    margin-top: 110px;
+}
+.title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+h2::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: "";
+    margin-top: 32px;
+    margin-left: 468px;
+}
+/* .box    {
+    height: 25px;
+    width: 1115px; */
+    /* background-color: #4ec6ab;
+ } */ 
+.box li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+img {
+    display: block;
+}
+span {
+    display: block;   
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Hower - не работает, не могу разобраться к чему прицепить) */
+.products a:hover {
+    color: #03a9f4;
+} 
+.name {
+    float: left;
+    background-color: #323232;
+    line-height: 40px;
+    width: 200px;
+}
+.price {
+    float: right;
+    color: #ffffff;
+    background-color: #8c8c8c;
+    line-height: 40px;
+    width: 55px;
+    text-align: center;
+}
+.news li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+article {
+    margin-top: 100px;
+}
+.news div {
+    width:  1110px;
+    height: 510px;
+    text-align: center;
+}
+h3::after {
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+    content: "";
+    margin-top: 32px;
+    margin-left: 0px;
+}
+h3 {
+    margin: 15px 0;
+}
+.news li {
+    width: 350px;
+    display: inline-block;
+    text-align: left;
+}
+.news li:last-child {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  } 
+
+.news div {
+    margin-top: 100px;
+}
+.news a {
+    display: block;
+    color: #ffffff;
+    background-color: #1abc9c;
+    margin-top: 16px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #1abc9c;
+    width: 160px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 11px 22px 20px;
+}
+p {
+    margin-top: 15px;
+}
