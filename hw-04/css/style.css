@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;    
-    box-sizing: border-box;
 }
 ul {
     list-style: none;
@@ -9,24 +8,61 @@ ul {
 a {
     text-decoration: none;
 }
-body {
+.wrapper {
+    padding-top: 32px;
+    margin left: 260px;
+    margin-right:277px;
+    width: 1110px;
+    height: 1727px;
+    margin: auto; 
     font-family:'Roboto', sans-serif; 
     font-size: 18px;
-    line-height: 26px;
-    margin: 35px 275px 82px 132px;
-} 
-.logo {
+    line-height: 26px;  
+    /* border: 2px solid #1e8105;  */
+}
+.header {
+    width: auto;
+    height: 34px;
+    /* border: 2px solid #1036a0; это для себя, для визуализации :-) */
+}
+.title {
+    height: 38px;
+    width: 480px;
+    padding: 97px 303px 131px 325px;
+    /* border: 2px solid #ec209e; */
+}
+.box {
+    width: 1110px;
+    height: 674px;
+    /* border: 2px solid #47f331;  */
+}
+.title2 {
+    height: 38px;
+    width: 308px;
+    padding: 102px 400px 117px;
+    /* border: 2px solid #ec209e; */
+    text-transform: uppercase;
+}
+.news {
+    width: 1110px;
+    height: 500px;
+    /* border: 2px solid black;   */
+}
+ .logo {
     float: left;
     text-transform: uppercase;
     font-size: 30px;
     line-height: 32px;
+    margin-right: 95px;
   } 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .logo::first-letter {
     color: #1abc9c;
     font-weight: bold;  
-} 
-.first {
-    padding: 24px 15px;
 }
 .menu {
     float: right;
@@ -40,47 +76,29 @@ body {
 }
 .menu li {
     float: left;
-    margin: 0 30px;
+    margin: 11px;
 }
 .menu li:first-child {
-    margin-left: 56px;
+    margin-left: 470px;
     color: #1abc9c;
 }
-/* .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }  */
-
-.products {
-    margin-top: 110px;
-}
-.title {
-    text-align: center;
-    font-size: 48px;
-    line-height: 32px;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-}
-h2::after {
-    display: block;
-    width: 164px;
-    height: 7px;
-    background-color: #1abc9c;
-    content: "";
-    margin-top: 32px;
-    margin-left: 468px;
-}
-/* .box    {
-    height: 25px;
-    width: 1115px; */
-    /* background-color: #4ec6ab;
- } */ 
 .box li {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+/* Не понимаю почему в фотошопе размеры этого бирюзового
+ блока width 165px heights 7px - отображаются в HTML очень большой полоской */
+h2::after {
+    display: block;
+    width: 165px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: "";
+    margin-top: 7px;
+    margin-left: 85px;
+} 
 img {
     display: block;
 }
@@ -91,16 +109,16 @@ span {
     color: #ffffff;
     font-weight: 700;
 }
-
-/* Hower - не работает, не могу разобраться к чему прицепить) */
-.products a:hover {
+/* Ховер не срабатывает, не могу разобраться почему */
+ .products a:hover {
     color: #03a9f4;
 } 
-.name {
+ .name {
     float: left;
     background-color: #323232;
     line-height: 40px;
     width: 200px;
+    padding-left: 3px;
 }
 .price {
     float: right;
@@ -110,24 +128,14 @@ span {
     width: 55px;
     text-align: center;
 }
-.news li {
-    display: block;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.box li:nth-child(4) {
+    margin-right: 0px;  
 }
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  } 
-article {
-    margin-top: 100px;
+.box li:nth-child(8) {
+    margin-right: 0px;  
 }
-.news div {
-    width:  1110px;
-    height: 510px;
-    text-align: center;
+h3 {
+    margin: 15px 0;
 }
 h3::after {
     display: block;
@@ -138,9 +146,17 @@ h3::after {
     margin-top: 32px;
     margin-left: 0px;
 }
-h3 {
-    margin: 15px 0;
-}
+  .news li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+  }
+ .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .news li {
     width: 350px;
     display: inline-block;
@@ -150,9 +166,6 @@ h3 {
     margin-right: 10px;
     margin-bottom: 20px;
   } 
-.news div {
-    margin-top: 100px;
-}
 .news a {
     display: block;
     color: #ffffff;
