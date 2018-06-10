@@ -8,52 +8,26 @@ ul {
 a {
     text-decoration: none;
 }
+
 .wrapper {
     padding-top: 32px;
-    margin left: 260px;
-    margin-right:277px;
     width: 1110px;
-    height: 1727px;
     margin: auto; 
+    background-color: #ffffff;
     font-family:'Roboto', sans-serif; 
     font-size: 18px;
     line-height: 26px;  
-    /* border: 2px solid #1e8105;  */
 }
 .header {
-    width: auto;
-    height: 34px;
-    /* border: 2px solid #1036a0; это для себя, для визуализации :-) */
+    margin-bottom: 110px;
 }
-.title {
-    height: 38px;
-    width: 480px;
-    padding: 97px 303px 131px 325px;
-    /* border: 2px solid #ec209e; */
-}
-.box {
-    width: 1110px;
-    height: 674px;
-    /* border: 2px solid #47f331;  */
-}
-.title2 {
-    height: 38px;
-    width: 308px;
-    padding: 102px 400px 117px;
-    /* border: 2px solid #ec209e; */
-    text-transform: uppercase;
-}
-.news {
-    width: 1110px;
-    height: 500px;
-    /* border: 2px solid black;   */
-}
- .logo {
+.logo {
     float: left;
     text-transform: uppercase;
     font-size: 30px;
     line-height: 32px;
     margin-right: 95px;
+    color: #656262;
   } 
 .clearfix::after {
     content: "";
@@ -64,76 +38,123 @@ a {
     color: #1abc9c;
     font-weight: bold;  
 }
-.menu {
+.navigation {
     float: right;
-    list-style: none;
+    display: block;
     font-size: 14px;
     line-height: 11px;
-    display: block;
+    color: #0f0101;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+}
+.navigation:hover {
+    color: #a1ddce;
 }
 .menu li {
     float: left;
     margin: 11px;
 }
-.menu li:first-child {
-    margin-left: 470px;
-    color: #1abc9c;
-}
-.box li {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+nav {
+    float: right;
 }
 
-/* Не понимаю почему в фотошопе размеры этого бирюзового
- блока width 165px heights 7px - отображаются в HTML очень большой полоской */
-h2::after {
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    /* font-weights не применился */
+    font-weight: 900;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: 	#515151;
+    margin-bottom: 92px;
+}
+.title::after {
+    content: "";
     display: block;
+    margin: auto;
     width: 165px;
     height: 7px;
     background-color: #1abc9c;
-    content: "";
-    margin-top: 7px;
-    margin-left: 85px;
+    margin-top: 32px;
 } 
+
+
 img {
     display: block;
 }
-span {
-    display: block;   
+.product-card {
+    display: inline-block;
+    float: left;
+    width: 255px;
+    height: 322px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+ .products_box li:nth-child(n+4) {
+    margin-right: 0;
+}  
+.products_box li:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}  
+.name {
+    float: left;
+    width: 186px;
+    height: 40px;
+    background-color: #323232;
+    line-height: 40px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-}
-/* Ховер не срабатывает, не могу разобраться почему */
- .products a:hover {
-    color: #03a9f4;
-} 
- .name {
-    float: left;
-    background-color: #323232;
-    line-height: 40px;
-    width: 200px;
-    padding-left: 3px;
+    padding-left: 14px;
 }
 .price {
     float: right;
-    color: #ffffff;
     background-color: #8c8c8c;
     line-height: 40px;
     width: 55px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+} 
+.product-card .name:hover {
+    background-color: #1abc9c;
 }
-.box li:nth-child(4) {
-    margin-right: 0px;  
+.product-card .price:hover {
+    background-color: #7fd9c7;
 }
-.box li:nth-child(8) {
-    margin-right: 0px;  
+.products {
+    margin-bottom: 105px;
 }
+
+
+.title2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: 	#515151;
+    margin-bottom: 80px;
+}
+.title2::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 165px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin-top: 32px;
+} 
 h3 {
     margin: 15px 0;
 }
@@ -147,40 +168,32 @@ h3::after {
     margin-left: 0px;
 }
   .news li {
-    display: block;
+    display: inline-block;
     float: left;
-    margin-right: 20px;
+    width: 350px;
+    text-align: left;
+    margin-right: 30px;
     margin-bottom: 20px; 
   }
- .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-.news li {
-    width: 350px;
-    display: inline-block;
-    text-align: left;
+  .news li:last-child {
+    margin-right: 0px;
 }
-.news li:last-child {
-    margin-right: 10px;
-    margin-bottom: 20px;
-  } 
-.news a {
-    display: block;
+.boxes a {
+    display: inline-block;
     color: #ffffff;
+    font-weight: 300;
     background-color: #1abc9c;
-    margin-top: 16px;
-    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 50px;
     text-align: center;
+    border-radius: 3px;
     border: 1px solid #1abc9c;
     width: 160px;
     height: 50px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    padding: 11px 22px 20px;
+    text-rendering: auto;
 }
 p {
-    margin-top: 15px;
+    margin: 15px 0px 18px 0px;
 }
+
