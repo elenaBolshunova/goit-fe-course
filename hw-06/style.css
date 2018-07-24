@@ -34,12 +34,12 @@ a {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    /* Размер блока, ширина */
-    flex-basis: 492px; 
-    /* Ссылки менню размещаем в контейнере */
+    /* Ссылки меню размещаем в контейнере */
     display: flex;
     justify-content: space-between;
     align-items: center;
+     /* Размер блока, ширина */
+     flex-basis: 492px;
 } 
 .nav-item {
     color: #95e1d3;
@@ -51,7 +51,6 @@ a {
     width: 100%;
     height: 3px;
     background-color: #f38181;
-    /*margin-top: 0.75rem;*/
     opacity: 0;
 }
 .nav-item:hover {
@@ -62,11 +61,173 @@ a {
     opacity: 1;
 }
 /* ---------------------------------Section Services------------------------------------- */
-h3 {
+.title-one {
     font-family: 'Kaushan Script', cursive;
-    /* font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 24px;
+    color: #333333;
     text-align: center;
-    margin-bottom: 1.375rem; */
+    margin-bottom: 23px;
 }
+.title-two {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 65px;
+}
+.title-two::after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 3px;
+    margin-top: 42px;
+    background-color: #f38181;  
+}
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.service-item {
+    margin-bottom: 90px;
+    width: 400px;
+}
+
+.service-text {
+    /* блок с текстом стал рядом */
+    display: inline-block;
+    width: 335px;
+}
+.service_info {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+span {
+    color: #b6b6b6;
+    font-family: 'Roboto', sans-serif;
+}
+.symbol-card {
+    /* размещаю картинку */
+    vertical-align: top;
+    margin-right: 25px;
+}
+/* ---------------------------------Section our_team------------------------------------- */
+.inform-our_team {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 950px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.box-phototeam {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.member {
+    width: 380px;
+    position: relative;
+}
+.member-photo {
+    margin-bottom: 30px;  
+}
+.member-name {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    line-height: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.member-info {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #b6b6b6;
+}
+.team-overlay {
+    width: 380px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb( 252, 227, 138 ) 0%, rgb( 243, 129, 129 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 252, 227, 138 ) 0%, rgb( 243, 129, 129 ) 100%);
+    z-index: 1;  
+    transition:  0.2s;  
+}
+.member:hover .team-overlay {
+    opacity: 0.9;  
+}
+.soc-box {
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.soc-box:hover {
+    background-color: #95e1d3;  
+}
+/* ---------------------------------Footer------------------------------------- */
+.footer {
+    border-top: #e5e5e5 1px solid;
+    line-height: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 12px;
+}
+.info-site {
+    font-family: 'Montserrat', sans-serif;
+    color: #6b6b6b;
+    font-size: 14px;    
+}
+.color-word {
+    color: #f9c6c6;
+}
+.subscribe {
+    /* width: 380px;
+    height: 40px; */
+}
+  .email-input {
+    box-sizing: border-box;
+    width: 230px;
+    height: 40px;
+    color: #cccccc;
+    border: 1px solid #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+  .tab-sub {
+    box-sizing: border-box;
+    line-height: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
