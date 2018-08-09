@@ -1,0 +1,141 @@
+@import "fonts.css";
+/* ------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* ---------------------------------------Header------------------------------------ */
+
+.wrapper    {
+    width: 1400px;
+    margin: auto;
+}
+.navigation {
+    width: 940px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 125px;
+    padding-top: 30px;
+}
+.link-logo {
+    /* font-family: 'wisdom script'; */
+    font-size: 26px;
+    font-weight: 700;
+    color: #fee18d;
+}
+.main-nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+    /* Ссылки меню размещаем в контейнере */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* Размер блока, ширина */
+     flex-basis: 485px;
+}
+.nav-item:hover {
+    color: #fee18d;
+    /* cursor: context-menu; */
+}
+/* ---------------------------------Section sec-1------------------------------------- */
+.sec-1 {
+    width: 940px;
+    margin: auto;
+}
+.title-one {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* line-height: 35px; */
+    font-size: 40px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.title-two {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: italic;
+    /* line-height: 30px; */
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 75px;
+}
+.service-box {
+    display: flex;
+    /* /* flex-wrap: wrap; */
+    /* justify-content: space-around;
+    align-items: center; */
+    margin-bottom: 7.5rem;
+}
+.service-item {
+    display: flex;
+    flex-direction:	column;
+    align-items: center;
+}
+.icon-box {
+    width: 4.6875rem;
+    height: 4.6875rem;
+    border: 0.1875rem solid #fed136;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.service-text    {
+    text-align: center;
+}
+.service_info {
+    margin-bottom: 0.9375rem;
+}
+/* ---------------------------------Section sec-2------------------------------------- */
+.box-contact {
+   width: 1400px;  
+}
+.picture {
+     position: relative;
+}
+.sect-2 {
+   /* color: #ffffff; */
+}
+.box-form {
+    /* position: absolute; */
+    width: 58.75rem;
+    margin: auto;
+}
+.title-two-sect_2 {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 4.8125rem;
+}
+.input-box {
+    /* расположение блоков */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+}
+.input-line-box {
+ 
+}
+.input-line {
+    
+}

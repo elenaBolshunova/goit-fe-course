@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@ ul {
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 .wrapper    {
     width: 1205px;
@@ -14,13 +17,10 @@ a {
 }
 /* ---------------------------------Header------------------------------------- */
 .navigation {
-    /* width: 1205px; */
     display: flex;
     /* выравнивание по главной оси */
     justify-content: space-between;
-    /* выравнивание по поперечной оси */
-    align-items: center;
-    margin-bottom: 128px;
+    padding-bottom: 128px;
     padding-top: 28px;
 }
 .link-logo {
@@ -46,6 +46,9 @@ a {
     transition: 0.2s;
 }
 .nav-item::after {
+    /* Чуточку не понимаю зачем абсолют, если псевдо элемент находится там где нам нужно, для
+    чего нужно вынимать из потока */
+    /* position: absolute; */
     content: '';
     display: block;
     width: 100%;
@@ -62,8 +65,8 @@ a {
 }
 /* ---------------------------------Section Services------------------------------------- */
 .title-one {
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     line-height: 24px;
     font-size: 24px;
     color: #333333;
@@ -93,12 +96,21 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 90px;
+    min-height: 100%;
+}
+.icon-box {
+    width: 4.6875rem;
+    height: 4.6875rem;
 }
 .service-item {
-    margin-bottom: 90px;
+    padding-bottom: 90px;
     width: 400px;
+    display: flex;
 }
-
+.service-item:nth-last-child(-n+3) {
+    padding-bottom: 0px;
+}
 .service-text {
     /* блок с текстом стал рядом */
     display: inline-block;
@@ -113,6 +125,31 @@ a {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+.icon-serv1:before {
+    content: url(img/icon-1.png);
+    padding-right: 20px;
+}
+.icon-serv2:before {
+    content: url(img/icon-2.png);
+    padding-right: 28px;
+}
+.icon-serv3:before {
+    content: url(img/icon-3.png);
+    padding-right: 28px;
+}
+.icon-serv4:before {
+    content: url(img/icon-4.png);
+    padding-right: 28px;
+}
+.icon-serv5:before {
+    content: url(img/icon-5.png);
+    padding-right: 28px;
+}
+.icon-serv6:before {
+    content: url(img/icon-6.png);
+    padding-right: 28px;
+}
+
 span {
     color: #b6b6b6;
     font-family: 'Roboto', sans-serif;
@@ -134,7 +171,7 @@ span {
 .box-phototeam {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
 }
 .member {
     width: 380px;
@@ -171,10 +208,13 @@ span {
     background-image: -moz-linear-gradient( 90deg, rgb( 252, 227, 138 ) 0%, rgb( 243, 129, 129 ) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb( 252, 227, 138 ) 0%, rgb( 243, 129, 129 ) 100%);
     z-index: 1;  
-    transition:  0.2s;  
+    transition:  0.2s; 
+    box-shadow: 10px 10px 1px 1px #95e1d3;
 }
 .member:hover .team-overlay {
     opacity: 0.9;  
+    transform: translate(-10px, -10px);
+    transition-duration: 200ms; 
 }
 .soc-box {
     width: 55px;
@@ -204,10 +244,6 @@ span {
 }
 .color-word {
     color: #f9c6c6;
-}
-.subscribe {
-    /* width: 380px;
-    height: 40px; */
 }
   .email-input {
     box-sizing: border-box;
