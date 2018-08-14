@@ -20,7 +20,7 @@ a {
     display: flex;
     /* выравнивание по главной оси */
     justify-content: space-between;
-    padding-bottom: 128px;
+    padding-bottom: 115px;
     padding-top: 28px;
 }
 .link-logo {
@@ -29,26 +29,31 @@ a {
     font-weight: 700;
     color: #95e1d3;
 }
+.main-link {
+    display: flex;
+    flex-basis: 492px;
+    /* justify-content: space-between; */
+    
+}
 .main-nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    /* Ссылки меню размещаем в контейнере */
     display: flex;
     justify-content: space-between;
     align-items: center;
-     /* Размер блока, ширина */
-     flex-basis: 492px;
+    flex-basis: 492px;
 } 
 .nav-item {
     color: #95e1d3;
     transition: 0.2s;
+    position: relative;
 }
-.nav-item::after {
+.link-menu::after {
     /* Чуточку не понимаю зачем абсолют, если псевдо элемент находится там где нам нужно, для
     чего нужно вынимать из потока */
-    /* position: absolute; */
+    position: absolute;
     content: '';
     display: block;
     width: 100%;
@@ -60,18 +65,24 @@ a {
     color: #f38181;
     cursor: context-menu;
 }
-.nav-item:hover::after {
+.link-menu:hover::after {
     opacity: 1;
+}
+.link-menu {
+    color: #95e1d3;
+}
+.link-menu:hover {
+    color:  #f38181;
 }
 /* ---------------------------------Section Services------------------------------------- */
 .title-one {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
     line-height: 24px;
     font-size: 24px;
     color: #333333;
     text-align: center;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
 }
 .title-two {
     font-family: 'Montserrat', sans-serif;
@@ -81,9 +92,12 @@ a {
     text-transform: uppercase;
     color: #333333;
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 105px;
 }
 .title-two::after {
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%, -50%);
     content: '';
     display: block;
     margin: auto;
@@ -93,28 +107,37 @@ a {
     background-color: #f38181;  
 }
 .service-box {
+    width: 1165px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 90px;
+    justify-content: space-between;
+
+    /* padding-bottom: 90px; */
     min-height: 100%;
 }
-.icon-box {
+/* .icon-box {
     width: 4.6875rem;
     height: 4.6875rem;
-}
+} */
 .service-item {
-    padding-bottom: 90px;
-    width: 400px;
-    display: flex;
+    width: 388px;
+    min-height: 167px;
+    position: relative;
+    padding-left: 40px;
+    box-sizing: border-box;
+   
 }
-.service-item:nth-last-child(-n+3) {
+/* .service-item:nth-last-child(-n+3) {
     padding-bottom: 0px;
-}
+} */
 .service-text {
     /* блок с текстом стал рядом */
     display: inline-block;
     width: 335px;
+}
+span {
+    /* padding-left: 40px; */
 }
 .service_info {
     color: #333333;
@@ -124,30 +147,37 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    /* padding-left: 40px; */
 }
 .icon-serv1:before {
     content: url(img/icon-1.png);
-    padding-right: 20px;
+    position: absolute;
+    left: 0;
 }
 .icon-serv2:before {
     content: url(img/icon-2.png);
-    padding-right: 28px;
+    position: absolute;
+    left: 0;
 }
 .icon-serv3:before {
     content: url(img/icon-3.png);
-    padding-right: 28px;
+    position: absolute;
+    left: 0;
 }
 .icon-serv4:before {
     content: url(img/icon-4.png);
-    padding-right: 28px;
+    position: absolute;
+    left: 0;
 }
 .icon-serv5:before {
     content: url(img/icon-5.png);
-    padding-right: 28px;
+    position: absolute;
+    left: 0;
 }
 .icon-serv6:before {
     content: url(img/icon-6.png);
-    padding-right: 28px;
+    position: absolute;
+    left: 0;
 }
 
 span {
@@ -160,13 +190,32 @@ span {
     margin-right: 25px;
 }
 /* ---------------------------------Section our_team------------------------------------- */
+.title-one-sec2 {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title-two-sec2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 85px;
+}
 .inform-our_team {
     color: #999999;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 950px;
     margin: auto;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
 }
 .box-phototeam {
     display: flex;
@@ -178,7 +227,12 @@ span {
     position: relative;
 }
 .member-photo {
-    margin-bottom: 30px;  
+    margin-bottom: 30px; 
+    transition:  0.2s; 
+}
+.member:hover .member-photo {
+    transform: translate(-10px, -10px);
+    transition-duration: 200ms; 
 }
 .member-name {
     text-align: center;
@@ -219,6 +273,7 @@ span {
 .soc-box {
     width: 55px;
     height: 55px;
+    margin-right: 2px;
     background-color: #fce38a;
     display: flex;
     justify-content: center;
@@ -244,6 +299,9 @@ span {
 }
 .color-word {
     color: #f9c6c6;
+}
+form {
+    display: flex;
 }
   .email-input {
     box-sizing: border-box;
