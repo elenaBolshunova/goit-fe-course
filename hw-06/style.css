@@ -31,9 +31,7 @@ a {
 }
 .main-link {
     display: flex;
-    flex-basis: 492px;
-    /* justify-content: space-between; */
-    
+    flex-basis: 492px;   
 }
 .main-nav {
     font-family: 'Montserrat', sans-serif;
@@ -51,8 +49,6 @@ a {
     position: relative;
 }
 .link-menu::after {
-    /* Чуточку не понимаю зачем абсолют, если псевдо элемент находится там где нам нужно, для
-    чего нужно вынимать из потока */
     position: absolute;
     content: '';
     display: block;
@@ -85,6 +81,7 @@ a {
     margin-bottom: 20px;
 }
 .title-two {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 30px;
@@ -92,10 +89,11 @@ a {
     text-transform: uppercase;
     color: #333333;
     text-align: center;
-    margin-bottom: 105px;
+    padding-bottom: 105px;
 }
 .title-two::after {
     position: absolute;
+    bottom: 40%;
     left: 50%;
     transform: translate( -50%, -50%);
     content: '';
@@ -103,41 +101,25 @@ a {
     margin: auto;
     width: 60px;
     height: 3px;
-    margin-top: 42px;
     background-color: #f38181;  
 }
 .service-box {
     width: 1165px;
+    min-height: 334px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    /* padding-bottom: 90px; */
-    min-height: 100%;
 }
-/* .icon-box {
-    width: 4.6875rem;
-    height: 4.6875rem;
-} */
 .service-item {
     width: 388px;
-    min-height: 167px;
     position: relative;
     padding-left: 40px;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;  
 }
-/* .service-item:nth-last-child(-n+3) {
-    padding-bottom: 0px;
-} */
 .service-text {
-    /* блок с текстом стал рядом */
     display: inline-block;
     width: 335px;
-}
-span {
-    /* padding-left: 40px; */
 }
 .service_info {
     color: #333333;
@@ -147,7 +129,6 @@ span {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    /* padding-left: 40px; */
 }
 .icon-serv1:before {
     content: url(img/icon-1.png);
@@ -179,13 +160,11 @@ span {
     position: absolute;
     left: 0;
 }
-
 span {
     color: #b6b6b6;
     font-family: 'Roboto', sans-serif;
 }
 .symbol-card {
-    /* размещаю картинку */
     vertical-align: top;
     margin-right: 25px;
 }
@@ -200,6 +179,7 @@ span {
     margin-bottom: 20px;
 }
 .title-two-sec2 {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 30px;
@@ -207,7 +187,19 @@ span {
     text-transform: uppercase;
     color: #333333;
     text-align: center;
-    margin-bottom: 85px;
+    padding-bottom: 85px;
+}
+.title-two-sec2::after {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    content: '';
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;  
 }
 .inform-our_team {
     color: #999999;
@@ -270,6 +262,23 @@ span {
     transform: translate(-10px, -10px);
     transition-duration: 200ms; 
 }
+.social-box {
+    width: 226px;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition:  0.2s; 
+}
+.member:hover .social-box {
+    opacity: 1;
+    transition-duration: 200ms; 
+}
 .soc-box {
     width: 55px;
     height: 55px;
@@ -281,12 +290,11 @@ span {
     z-index: 1;
 }
 .soc-box:hover {
-    background-color: #95e1d3;  
+    background-color: #95e1d3;
 }
 /* ---------------------------------Footer------------------------------------- */
 .footer {
     border-top: #e5e5e5 1px solid;
-    line-height: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
