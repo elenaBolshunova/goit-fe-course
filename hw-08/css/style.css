@@ -1,0 +1,233 @@
+@import "fonts.css";
+/* ------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+font-size: 16px;
+}
+/* ---------------------------------------Header------------------------------------ */
+
+.wrapper    {
+    width: 20rem;
+    margin: auto;
+}
+header {
+    width: 20rem;
+    position: relative;
+    padding-bottom: 100px;
+}
+.background {
+    background: url(/img/Mobile-1.jpg);
+    width: 20rem;
+    min-height: 33.75rem;
+}
+.nav    {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+}
+.login  {
+    color: white;
+    font-size: 14px;
+}
+.sign {
+    color: white;
+    font-size: 14px;
+}
+.sec-1{
+    /* color: white; */
+    /* position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%); */
+}
+/* 
+.navigation {
+    width: 58.75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem 0 6.875rem;
+}
+.link-logo {
+    font-family: 'Wisdom Script';
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: #fee18d;
+}
+.main-nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 30.3125rem;
+}
+.nav-item {
+color: #222222;
+}
+.nav-item:hover {
+    color: #fee18d;
+} */
+/* ---------------------------------Section sec-1------------------------------------- */
+/* .sec-1 {
+    width: 58.75rem;
+    margin: auto;
+}
+.title-one {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 2.1875rem;
+    font-size: 2.5rem;
+    color: #222222;
+    text-align: center;
+    padding-bottom: 1.25rem;
+    text-transform: uppercase;
+}
+.title-two {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.0625rem;
+    font-size: 1rem;
+    color: #777777;
+    text-align: center;
+    padding-bottom: 4.6875rem;
+}
+.service-box {
+    display: flex;
+    margin-bottom: 6.8125rem;
+}
+.service-item {
+    display: flex;
+    flex-direction:	column;
+    align-items: center;
+}
+.icon-box {
+    width: 4.6875rem;
+    height: 4.6875rem;
+    border: 0.1875rem solid #fed136;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.service-text  {
+    text-align: center;
+}
+.service_info {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    margin-bottom: 0.9375rem;
+}
+.serv-information {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #777777;
+
+} */
+/* ---------------------------------Section sec-2------------------------------------- */
+/* .box-contact {
+   width: 87.5rem;  
+}
+.picture-box {
+    position: relative;
+}
+.box-form {
+    position: absolute;
+    width: 58.75rem;
+    min-height: 28.4375rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: auto;
+}
+.title-one-sect-2 {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+.title-two-sect-2 {
+    font-family: 'Roboto Slab';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+    padding-bottom: 4.626rem;
+}
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.875rem;
+}
+.input-line-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 13.3125rem;  
+}
+.input-line {
+    box-sizing: border-box;
+    width: 28.4375rem;
+    height: 3.125rem;
+    border: none;
+    border: 0.0625rem solid #cccccc;
+    border-radius: 0.125rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 0.7692rem;
+
+}
+.input-area {
+    box-sizing: border-box;
+    width: 28.75rem;
+    height: 13.125rem;
+    border: none;
+    border: 0.0625rem solid #cccccc;
+    border-radius: 0.125rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.25rem 0 0 1.25rem;
+}
+.submit-but {
+    border: none;
+    background-color: #fed136;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 15rem;
+    height: 4.0625rem;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);  
+}
+.req:valid {
+    outline: 0.125rem solid #008000;
+}
+.req:invalid {
+    outline: 0.125rem solid #fd0101;
+} */
