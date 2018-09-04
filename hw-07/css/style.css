@@ -139,7 +139,7 @@ color: #222222;
 }
 /* ---------------------------------Section sec-2------------------------------------- */
 .sect-2 {
-    background: url(/img/Section-2.png) no-repeat;
+    background: url(img/Section-2.png) no-repeat;
     background-size: cover;
     min-height: 42.25rem;
 }
