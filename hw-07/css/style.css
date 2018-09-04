@@ -88,32 +88,32 @@ color: #222222;
     align-items: center;
 }
 .icon-serv1:before {
-    content: "";
+    content: url(/img/icon-1.png);
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%) translateY(0%);
-    background-image: url(/img/icon-1.png);
+    /* background-image: url(img/icon-1.png); */
     width: 4.6875rem;
     height: 4.5625rem;  
 }
 .icon-serv2:before {
-    content: "";
+    content: url(/img/icon-2.png);
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translateX(-50%) translateY(0%);
-    background-image: url(/img/icon-2.png);
+    /* transform: translateX(-50%) translateY(0%); */
+    /* background-image: url(img/icon-2.png); */
     width: 4.6875rem;
     height: 4.5625rem;   
 }
 .icon-serv3:before {
-    content: "";
+    content: url(/img/icon-3.png);
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%) translateY(0%);
-    background-image: url(/img/icon-3.png);
+    /* background-image: url(/img/icon-3.png); */
     width: 4.6875rem;
     height: 4.5625rem;   
 }
@@ -139,7 +139,7 @@ color: #222222;
 }
 /* ---------------------------------Section sec-2------------------------------------- */
 .sect-2 {
-    background: url(/img/Section-2.png) no-repeat;
+    background: url(/img/map.png) no-repeat;
     background-size: cover;
     min-height: 42.25rem;
 }
