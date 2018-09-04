@@ -88,7 +88,7 @@ color: #222222;
     align-items: center;
 }
 .icon-serv1:before {
-    content: "url(img/icon-1.png)";
+    content: url(img/icon-1.png);
     position: absolute;
     left: 50%;
     top: 0;
@@ -98,7 +98,7 @@ color: #222222;
     height: 4.5625rem;  
 }
 .icon-serv2:before {
-    content: "url(img/icon-2.png)";
+    content: url(img/icon-2.png);
     position: absolute;
     left: 50%;
     top: 0;
@@ -108,7 +108,7 @@ color: #222222;
     height: 4.5625rem;   
 }
 .icon-serv3:before {
-    content: "url(img/icon-3.png)";
+    content: url(img/icon-3.png);
     position: absolute;
     left: 50%;
     top: 0;
@@ -139,7 +139,7 @@ color: #222222;
 }
 /* ---------------------------------Section sec-2------------------------------------- */
 .sect-2 {
-    background-image: url(img/Section-2.png);
+    background-image: url(img/map.png);
     background-size: cover;
     min-height: 42.25rem;
 }
