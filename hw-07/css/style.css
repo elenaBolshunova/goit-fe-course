@@ -14,9 +14,7 @@ body {
 font-size: 16px;
 }
 /* ---------------------------------------Header------------------------------------ */
-
 .wrapper    {
-    width: 87.5rem;
     margin: auto;
 }
 .navigation {
@@ -34,14 +32,18 @@ font-size: 16px;
     color: #fee18d;
 }
 .main-nav {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    display: flex;
+    flex-basis: 30.3125rem;
+}
+.nav-link {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-basis: 30.3125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase; 
 }
 .nav-item {
 color: #222222;
@@ -53,6 +55,7 @@ color: #222222;
 .sec-1 {
     width: 58.75rem;
     margin: auto;
+    padding-bottom: 6.8125rem;
 }
 .title-one {
     font-family: 'Montserrat', sans-serif;
@@ -61,7 +64,7 @@ color: #222222;
     font-size: 2.5rem;
     color: #222222;
     text-align: center;
-    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
     text-transform: uppercase;
 }
 .title-two {
@@ -72,22 +75,49 @@ color: #222222;
     font-size: 1rem;
     color: #777777;
     text-align: center;
-    padding-bottom: 4.6875rem;
+    margin-bottom: 4.6875rem;
 }
 .service-box {
     display: flex;
-    margin-bottom: 6.8125rem;
 }
 .service-item {
+    padding-top: 6rem;
+    position: relative;
     display: flex;
     flex-direction:	column;
     align-items: center;
 }
-.icon-box {
+.icon-serv1:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(/img/icon-1.png);
     width: 4.6875rem;
-    height: 4.6875rem;
-    border: 0.1875rem solid #fed136;
-    border-radius: 50%;
+    height: 4.5625rem;  
+}
+.icon-serv2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(/img/icon-2.png);
+    width: 4.6875rem;
+    height: 4.5625rem;   
+}
+.icon-serv3:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(/img/icon-3.png);
+    width: 4.6875rem;
+    height: 4.5625rem;   
+}
+.icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,22 +136,17 @@ color: #222222;
     font-weight: 400;
     font-size: 0.875rem;
     color: #777777;
-
 }
 /* ---------------------------------Section sec-2------------------------------------- */
-.box-contact {
-   width: 87.5rem;  
-}
-.picture-box {
-    position: relative;
+.sect-2 {
+    background: url(/img/Section-2.png) no-repeat;
+    background-size: cover;
+    min-height: 42.25rem;
 }
 .box-form {
-    position: absolute;
+    padding-top: 6.875rem;
     width: 58.75rem;
     min-height: 28.4375rem;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     margin: auto;
 }
 .title-one-sect-2 {
@@ -140,43 +165,43 @@ color: #222222;
     text-transform: uppercase;
     color: #777777;
     text-align: center;
-    padding-bottom: 4.626rem;
+    margin-bottom: 5.4375rem;
 }
 .input-box {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1.875rem;
+    flex-wrap: wrap;
 }
-.input-line-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 13.3125rem;  
+.list-input {
+    margin-bottom: 1.875rem;
+}
+ .list-input:last-child {
+    margin: 0;
 }
 .input-line {
     box-sizing: border-box;
-    width: 28.4375rem;
+    width: 28.5625rem;
     height: 3.125rem;
     border: none;
     border: 0.0625rem solid #cccccc;
     border-radius: 0.125rem;
     font-family: 'Montserrat';
     font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 0.7692rem;
-
+    text-transform: none;
+    text-indent: 0.7692rem;
 }
 .input-area {
+    padding: 10px;
     box-sizing: border-box;
-    width: 28.75rem;
+    width: 28.5625rem;
     height: 13.125rem;
     border: none;
     border: 0.0625rem solid #cccccc;
     border-radius: 0.125rem;
     font-family: 'Montserrat';
     font-weight: 700;
-    text-transform: uppercase;
-    padding: 1.25rem 0 0 1.25rem;
+    text-transform: none;
+    text-indent: 1.25rem;
 }
 .submit-but {
     border: none;
@@ -189,9 +214,12 @@ color: #222222;
     font-size: 0.875rem;
     font-family: 'Montserrat';
     font-weight: 700;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(0%);  
+    margin: 30px 0 0 350px;
+}
+textarea::placeholder, input::placeholder {
+    color: #bbbbbb;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .req:valid {
     outline: 0.125rem solid #008000;
