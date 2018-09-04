@@ -93,7 +93,7 @@ color: #222222;
     left: 50%;
     top: 0;
     transform: translateX(-50%) translateY(0%);
-    background-image: url(/img/icon-1.png);
+    background-image: url(img/icon-1.png);
     width: 4.6875rem;
     height: 4.5625rem;  
 }
@@ -103,7 +103,7 @@ color: #222222;
     left: 50%;
     top: 0;
     transform: translateX(-50%) translateY(0%);
-    background-image: url(/img/icon-2.png);
+    background-image: url(img/icon-2.png);
     width: 4.6875rem;
     height: 4.5625rem;   
 }
@@ -113,7 +113,7 @@ color: #222222;
     left: 50%;
     top: 0;
     transform: translateX(-50%) translateY(0%);
-    background-image: url(/img/icon-3.png);
+    background-image: url(img/icon-3.png);
     width: 4.6875rem;
     height: 4.5625rem;   
 }
@@ -139,7 +139,7 @@ color: #222222;
 }
 /* ---------------------------------Section sec-2------------------------------------- */
 .sect-2 {
-    background: url(img/Section-2.png) no-repeat;
+    background: url(img/Section-2.png);
     background-size: cover;
     min-height: 42.25rem;
 }
