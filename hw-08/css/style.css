@@ -15,16 +15,93 @@ font-size: 16px;
 }
 /* ---------------------------------------Header------------------------------------ */
 
-.wrapper    {
+.wrapper {
     width: 20rem;
+    margin: 0 auto;
+}
+.page-header {
+    background: url(/img/Mobile-1.jpg) no-repeat;
+    max-width: 100%;
+    height: auto;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-bottom: 138px;
+}
+/* .container {
+    padding: 0 15px;
+} */
+.page-nav {
+    margin-bottom: 120px;
+    /* padding: 30px 60px 0; */
+}
+.site-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px; 
+}
+.sign-up {
+    border: 2px solid #ffffff;
+    border-radius: 35px;
+    padding: 10px 15px;
+}
+.team {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+.services {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.button-find {
+    display: block;
     margin: auto;
+    width: 17.5rem;
+    height: 2.5rem;
+    border: none;
+    background: none;
+    border: 1px solid #ff4e50;
+    background-color: #ff4e50;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+   
+
+
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
 }
-header {
-    width: 20rem;
-    position: relative;
-    padding-bottom: 100px;
+/* ------------------------------------Main-------------------------------------- */
+.feature-list-item {
+    width: 290px;
+    margin-bottom: 72px;
+    text-align: center;
 }
-.background {
+.feature-list-item :last-child {
+margin-bottom: 0;
+}
+/*.background {
     background: url(/img/Mobile-1.jpg);
     width: 20rem;
     min-height: 33.75rem;
@@ -42,7 +119,7 @@ header {
 .sign {
     color: white;
     font-size: 14px;
-}
+} */
 .sec-1{
     /* color: white; */
     /* position: absolute;
