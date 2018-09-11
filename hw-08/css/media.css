@@ -1,0 +1,101 @@
+@media (max-width: 767px) {
+    .team-card:not(:last-child) {
+    margin-bottom: 1.875rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 48rem;
+        margin: 0 auto;
+    }
+    .page-header {
+        background: url(./../img/ipad-2.jpg) no-repeat;
+        width: 42.125rem;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        padding: 2.875rem 2.9375rem 14.625rem;
+    }
+    .box-navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .services {
+        max-width: 32rem;
+        margin: 0 auto 1.5rem;
+        font-size: 3.25rem;
+    }
+    .info {
+        max-width: 25.3125rem;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 auto 1.5625rem;
+    }
+    .button-find {
+        width: 14.375rem;
+    }
+    .page-main {
+        width: 48rem;
+        padding-bottom: 2.5rem;
+    }
+    .title-search {
+        margin-bottom: 1.875rem;
+    }
+    .team-box {
+        width: 30.75rem;
+        margin: 0 auto;
+    }
+    .card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .team-card {
+        margin-bottom: 0;
+    }
+    .photo {
+        margin-bottom: 1.0625rem;
+    }
+    .btn-search {
+        width: 12.1875rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px){
+    .team-card:not(:nth-last-child(-n+2)) {
+    margin-bottom: 1.875rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        width: 90rem;
+        margin: 0 auto;
+    }
+    .page-header {
+        width: 58.875rem;
+        background: url(./../img/desktop-3.jpg) no-repeat;
+        max-width: 100%;
+        height: auto;
+        padding: 2.8125rem 15.625rem 14.6875rem;
+    }
+    .box-navigation {
+        margin: 0 auto 1.875rem;
+    }
+    .info {
+        margin: 0 auto 1.875rem;
+    }
+    .page-main {
+        width: 58.875rem
+    }
+    .team-box {
+        width: 58.875rem;
+        margin: 0 auto;
+    }
+    .team-card {
+        width: 13.75rem;  
+        margin-bottom: 0;
+    }
+}

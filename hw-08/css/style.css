@@ -14,25 +14,26 @@ body {
 font-size: 16px;
 }
 /* ---------------------------------------Header------------------------------------ */
-
 .wrapper {
     width: 20rem;
     margin: 0 auto;
 }
 .page-header {
-    background: url(/img/Mobile-1.jpg) no-repeat;
-    max-width: 100%;
+    background: url(./../img/Mobile-1.jpg) no-repeat;
+    display: block;
     height: auto;
     color: #ffffff;
-    padding-top: 25px;
-    padding-bottom: 138px;
+    padding: 1.5625rem 0.3125rem 8.5rem;
+    width: 19.375rem;
+    margin: auto;
 }
-/* .container {
-    padding: 0 15px;
-} */
+.box-navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 2.375rem
+}
 .page-nav {
-    margin-bottom: 120px;
-    /* padding: 30px 60px 0; */
+    margin-bottom: 7.5rem;
 }
 .site-navigation {
     display: flex;
@@ -43,33 +44,36 @@ font-size: 16px;
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 14px; 
+    font-size: 0.875rem; 
+    padding: 0.5rem 1.125rem;
 }
 .sign-up {
-    border: 2px solid #ffffff;
-    border-radius: 35px;
-    padding: 10px 15px;
+    border: 0.125rem solid #ffffff;
+    border-radius: 2.1875rem;
+    padding: 0.625rem 0.9375rem;
 }
-.team {
+.logo {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
-    margin-bottom: 28px;
+    cursor: pointer;
 }
 .services {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 0.8125rem;
 }
 .info {
     text-align: center;
-    margin-bottom: 20px;
     font-family: 'Roboto';
     font-weight: 300;
+    font-size: 1.125rem;
+    margin: 0 auto 0.8125rem;
+    max-width: 14.0625rem;
 }
 .button-find {
     display: block;
@@ -78,233 +82,101 @@ font-size: 16px;
     height: 2.5rem;
     border: none;
     background: none;
-    border: 1px solid #ff4e50;
+    border: 0.0625rem solid #ff4e50;
     background-color: #ff4e50;
     border-radius: 2rem;
     color: #ffffff;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 14px;
-   
-
-
-    /* position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); */
+    font-size: 0.875rem;
+    cursor: pointer;
 }
 /* ------------------------------------Main-------------------------------------- */
-.feature-list-item {
-    width: 290px;
-    margin-bottom: 72px;
+.page-main {
+    width: 18.75rem;
     text-align: center;
-}
-.feature-list-item :last-child {
-margin-bottom: 0;
-}
-/*.background {
-    background: url(/img/Mobile-1.jpg);
-    width: 20rem;
-    min-height: 33.75rem;
-}
-.nav    {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%) translateY(0%);
-}
-.login  {
-    color: white;
-    font-size: 14px;
-}
-.sign {
-    color: white;
-    font-size: 14px;
-} */
-.sec-1{
-    /* color: white; */
-    /* position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%) translateY(0%); */
-}
-/* 
-.navigation {
-    width: 58.75rem;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.875rem 0 6.875rem;
-}
-.link-logo {
-    font-family: 'Wisdom Script';
-    font-size: 1.625rem;
-    font-weight: 400;
-    color: #fee18d;
-}
-.main-nav {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 30.3125rem;
-}
-.nav-item {
-color: #222222;
-}
-.nav-item:hover {
-    color: #fee18d;
-} */
-/* ---------------------------------Section sec-1------------------------------------- */
-/* .sec-1 {
-    width: 58.75rem;
+    padding: 4.125rem 0.625rem 1.875rem;
     margin: auto;
 }
-.title-one {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    line-height: 2.1875rem;
-    font-size: 2.5rem;
-    color: #222222;
-    text-align: center;
-    padding-bottom: 1.25rem;
-    text-transform: uppercase;
-}
-.title-two {
-    font-family: 'Merriweather', serif;
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 0.0625rem;
-    font-size: 1rem;
-    color: #777777;
-    text-align: center;
-    padding-bottom: 4.6875rem;
-}
-.service-box {
-    display: flex;
-    margin-bottom: 6.8125rem;
-}
-.service-item {
-    display: flex;
-    flex-direction:	column;
-    align-items: center;
-}
-.icon-box {
-    width: 4.6875rem;
-    height: 4.6875rem;
-    border: 0.1875rem solid #fed136;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-.service-text  {
-    text-align: center;
-}
-.service_info {
-    font-family: 'Montserrat';
-    font-weight: 700;
+.title-search {
     margin-bottom: 0.9375rem;
-}
-.serv-information {
-    font-family: 'Roboto Slab';
-    font-weight: 400;
-    font-size: 0.875rem;
-    color: #777777;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.375rem;
 
-} */
-/* ---------------------------------Section sec-2------------------------------------- */
-/* .box-contact {
-   width: 87.5rem;  
 }
-.picture-box {
+.team-box  {
+    width: 14.6875rem;
+    margin: 0 auto;
+}
+.photo {
+     margin-bottom: 0.625rem;
+}
+.team-card {
     position: relative;
+    width: 14.6875rem;   
 }
-.box-form {
+.card-1::after {
+    content: url(./../img/icon-red.png);
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
-    width: 58.75rem;
-    min-height: 28.4375rem;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    top: 35%;
+    right: 25%;
+}
+.card-2::after {
+    content: url(./../img/icon-yellow.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.card-3::after {
+    content: url(./../img/icon-green.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.card-4:after {
+    content: url(./../img/icon-blue.png);
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+}
+.link-team {
+    color: #000000;
+}
+.name-partner {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+.info-list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #666666;
     margin: auto;
 }
-.title-one-sect-2 {
-    color: #ffffff;
-    font-family: 'Montserrat';
-    font-size: 2.5rem;
+/* ------------------------------------Footer-------------------------------------- */
+.btn-search {
+    display: block;
+    margin: auto;
+    width: 17.5rem;
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-.title-two-sect-2 {
-    font-family: 'Roboto Slab';
-    font-weight: 400;
-    font-style: italic;
     font-size: 0.875rem;
-    text-transform: uppercase;
-    color: #777777;
-    text-align: center;
-    padding-bottom: 4.626rem;
+    color: #ff4e50;
+    background-color: #fff;
+    border: 0.125rem solid #ff4e50;
+    border-radius: 2rem;
+    margin-bottom: 3.4375rem;
+    cursor: pointer;
 }
-.input-box {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 1.875rem;
-}
-.input-line-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 13.3125rem;  
-}
-.input-line {
-    box-sizing: border-box;
-    width: 28.4375rem;
-    height: 3.125rem;
-    border: none;
-    border: 0.0625rem solid #cccccc;
-    border-radius: 0.125rem;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-left: 0.7692rem;
-
-}
-.input-area {
-    box-sizing: border-box;
-    width: 28.75rem;
-    height: 13.125rem;
-    border: none;
-    border: 0.0625rem solid #cccccc;
-    border-radius: 0.125rem;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 1.25rem 0 0 1.25rem;
-}
-.submit-but {
-    border: none;
-    background-color: #fed136;
-    color: #ffffff;
-    text-transform: uppercase;
-    width: 15rem;
-    height: 4.0625rem;
-    border-radius: 0.125rem;
-    font-size: 0.875rem;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(0%);  
-}
-.req:valid {
-    outline: 0.125rem solid #008000;
-}
-.req:invalid {
-    outline: 0.125rem solid #fd0101;
-} */
