@@ -10,6 +10,9 @@ ul {
 a {
     text-decoration: none;
 }
+img {
+    display: block;
+}
 body {
 font-size: 16px;
 }
@@ -23,18 +26,19 @@ font-size: 16px;
     display: block;
     height: auto;
     color: #ffffff;
-    padding: 1.5625rem 0.3125rem 8.5rem;
+    padding: 1.5625rem 0.3125rem 8.125rem;
     width: 19.375rem;
     margin: auto;
 }
 .box-navigation {
+    
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 2.375rem
 }
-.page-nav {
+/* .page-nav {
     margin-bottom: 7.5rem;
-}
+} */
 .site-navigation {
     display: flex;
     justify-content: center;
@@ -47,10 +51,16 @@ font-size: 16px;
     font-size: 0.875rem; 
     padding: 0.5rem 1.125rem;
 }
-.sign-up {
-    border: 0.125rem solid #ffffff;
+.login:hover {
+    border: 0.125rem solid #fff;
     border-radius: 2.1875rem;
+}
+.sign-up {
     padding: 0.625rem 0.9375rem;
+}
+.sign-up:hover {
+    border: 0.125rem solid #fff;
+    border-radius: 2.1875rem;
 }
 .logo {
     font-family: 'Montserrat';
@@ -95,7 +105,6 @@ font-size: 16px;
 .page-main {
     width: 18.75rem;
     text-align: center;
-    padding: 4.125rem 0.625rem 1.875rem;
     margin: auto;
 }
 .title-search {
@@ -107,14 +116,17 @@ font-size: 16px;
 }
 .team-box  {
     width: 14.6875rem;
+    padding: 4.125rem 0 0 0;
     margin: 0 auto;
 }
 .photo {
-     margin-bottom: 0.625rem;
+     /* margin-bottom: 0.625rem; */
 }
 .team-card {
     position: relative;
-    width: 14.6875rem;   
+    width: 14.6875rem;  
+    display: flex; 
+    flex-direction: column;
 }
 .card-1::after {
     content: url(./../img/icon-red.png);
@@ -152,12 +164,14 @@ font-size: 16px;
     color: #000000;
 }
 .name-partner {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 0.875rem;
     margin-bottom: 1rem;
 }
 .info-list {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 0.875rem;
@@ -177,6 +191,8 @@ font-size: 16px;
     background-color: #fff;
     border: 0.125rem solid #ff4e50;
     border-radius: 2rem;
-    margin-bottom: 3.4375rem;
     cursor: pointer;
+}
+.page-footer {
+    padding: 2.5rem 0 3.4375rem;
 }

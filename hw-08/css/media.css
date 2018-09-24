@@ -2,13 +2,16 @@
     .team-card:not(:last-child) {
     margin-bottom: 1.875rem;
     }
+    .page-nav {
+        margin-bottom: 7.5rem;
+    }
 }
 
 @media (min-width: 768px) {
-    .wrapper {
+    /* .wrapper {
         width: 48rem;
         margin: 0 auto;
-    }
+    } */
     .page-header {
         background: url(./../img/ipad-2.jpg) no-repeat;
         width: 42.125rem;
@@ -20,7 +23,7 @@
     .box-navigation {
         flex-direction: row;
         justify-content: space-between;
-        margin-bottom: 2rem;
+        margin-bottom: 7.5rem;
     }
     .services {
         max-width: 32rem;
@@ -38,7 +41,7 @@
     }
     .page-main {
         width: 48rem;
-        padding-bottom: 2.5rem;
+        /* padding-bottom: 2.5rem; */
     }
     .title-search {
         margin-bottom: 1.875rem;
@@ -55,9 +58,9 @@
     .team-card {
         margin-bottom: 0;
     }
-    .photo {
+    /* .photo {
         margin-bottom: 1.0625rem;
-    }
+    } */
     .btn-search {
         width: 12.1875rem;
     }
@@ -70,19 +73,20 @@
 }
 
 @media (min-width: 1440px) {
-    .wrapper {
+    /* .wrapper {
         width: 90rem;
         margin: 0 auto;
-    }
+    } */
     .page-header {
-        width: 58.875rem;
+        /* display: block; */
+        /* width: 58.875rem; */
         background: url(./../img/desktop-3.jpg) no-repeat;
-        max-width: 100%;
-        height: auto;
+        /* max-width: 100%;
+        height: auto; */
         padding: 2.8125rem 15.625rem 14.6875rem;
     }
     .box-navigation {
-        margin: 0 auto 1.875rem;
+        margin: 0 auto 7.5rem;
     }
     .info {
         margin: 0 auto 1.875rem;
